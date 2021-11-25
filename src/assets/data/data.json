@@ -1,0 +1,186 @@
+[
+  {
+    "id": 1,
+    "sectionTitle": "Animals",
+    "code": "animal",
+    "group": [
+      {
+        "quizTitle": "Pets",
+        "quiz": [
+          {
+            "question": "How many pets do you have?",
+            "answer": "Couple of Meows"
+          },
+          {
+            "question": "Do you like dogs?",
+            "answer": "Let me think ..."
+          }
+        ]
+      },
+      {
+        "quizTitle": "Giraffe",
+        "quiz": [
+          {
+            "question": "How tall a regular giraffe",
+            "answer": "Taller than me :)"
+          },
+          {
+            "question": "Are they fast at running?",
+            "answer": "Faster than me :)"
+          }
+        ]
+      },
+      {
+        "quizTitle": "Owl",
+        "quiz": [
+          {
+            "question": "Have you ever seen an owl?",
+            "answer": "Yes I have, on YT."
+          },
+          {
+            "question": "Are they predators?",
+            "answer": "Definitely"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "sectionTitle": "Music",
+    "code": "music",
+    "group": [
+      {
+        "quizTitle": "Pop music",
+        "quiz": [
+          {
+            "question": "Do you like pop music?",
+            "answer": "Depends on my mood"
+          },
+          {
+            "question": "What type of music do you usually listen to?",
+            "answer": "Classical music"
+          }
+        ]
+      },
+      {
+        "quizTitle": "Sounds",
+        "quiz": [
+          {
+            "question": "What sounds irritates you most?",
+            "answer": "any unexpected loud sound"
+          },
+          {
+            "question": "What sound do you like most?",
+            "answer": "Silence"
+          }
+        ]
+      },
+      {
+        "quizTitle": "Rock",
+        "quiz": [
+          {
+            "question": "RockNRoll or Heavy metal?",
+            "answer": "R&Roll"
+          },
+          {
+            "question": "Do you dance on rock music?",
+            "answer": "Oh yeah"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "sectionTitle": "Vehicles",
+    "code": "cars",
+    "group": [
+      {
+        "quizTitle": "Favorite car",
+        "quiz": [
+          {
+            "question": "You favorite car?",
+            "answer": "SUV"
+          },
+          {
+            "question": "Do you have a car?",
+            "answer": "I prefer bikes"
+          }
+        ]
+      },
+      {
+        "quizTitle": "Japan autos",
+        "quiz": [
+          {
+            "question": "Have you ever driven Japanese cars",
+            "answer": "I have"
+          },
+          {
+            "question": "Your favorite Japanese car?",
+            "answer": "All of them are good."
+          }
+        ]
+      },
+      {
+        "quizTitle": "Steering wheel",
+        "quiz": [
+          {
+            "question": "Right or left?",
+            "answer": "doesn't matter"
+          },
+          {
+            "question": "Automatic or manual?",
+            "answer": "Of course Automatic"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "sectionTitle": "Technology",
+    "code": "technology",
+    "group": [
+      {
+        "quizTitle": "SmartPhone",
+        "quiz": [
+          {
+            "question": "Smart or Phone?",
+            "answer": "Smartphone"
+          },
+          {
+            "question": "techno or logy",
+            "answer": "technology"
+          }
+        ]
+      },
+      {
+        "quizTitle": "OS",
+        "quiz": [
+          {
+            "question": "What OS do you prefer to work with?",
+            "answer": "Linux Ubuntu"
+          },
+          {
+            "question": "What about macOS?",
+            "answer": "Never worked with, but I would love to"
+          }
+        ]
+      },
+      {
+        "quizTitle": "Future",
+        "quiz": [
+          {
+            "question": "Would you like to travel to the future",
+            "answer": "I'm scared of thinking about it, but I would definitely"
+          },
+          {
+            "question": "Android or iOS?",
+            "answer": "That, which has a good camera"
+          }
+        ]
+      }
+    ]
+  }
+]

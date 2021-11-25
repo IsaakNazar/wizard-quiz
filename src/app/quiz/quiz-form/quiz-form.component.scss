@@ -1,0 +1,10 @@
+.form-box {
+  max-width: 80%;
+  padding: 20px 0;
+}
+
+@media screen and (max-width: 1280px)  {
+  .form-box {
+    max-width: 100%;
+  }
+}

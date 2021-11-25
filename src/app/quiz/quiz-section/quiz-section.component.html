@@ -1,0 +1,42 @@
+<ng-container *ngIf="quiz">
+
+  <mat-progress-bar mode="determinate" [value]="progressBar"></mat-progress-bar>
+
+
+  <div class="quiz-group">
+    <button
+      class="quiz-group__home"
+      mat-fab color="primary"
+      aria-label="icon button with a home icon"
+      routerLink="/quiz">
+      <mat-icon>home</mat-icon>
+    </button>
+
+    <app-quiz-group [quiz]="quiz[counter-1]"></app-quiz-group>
+
+    <div>
+      <button
+        mat-raised-button
+        color="accent"
+        (click)="prevQuiz()"
+        [disabled]="counter === 1"
+      >Back</button>
+
+      <button
+        mat-raised-button
+        color="primary"
+        (click)="nextQuiz()"
+        [disabled]="counter === quiz.length"
+      >Next</button>
+
+      <button
+        *ngIf="counter === quiz.length"
+        mat-stroked-button
+        color="primary"
+        (click)="saveForm(quiz)"
+      >Save</button>
+    </div>
+  </div>
+
+
+</ng-container>

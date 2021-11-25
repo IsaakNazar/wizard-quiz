@@ -1,0 +1,11 @@
+
+mat-grid-tile {
+  background: #d9d2e9;
+  cursor: pointer;
+
+  &:hover {
+    background: #b4a7d6;
+    transition: background-color ease-out .2s;
+    color: white;
+  }
+}

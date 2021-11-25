@@ -1,0 +1,7 @@
+<ng-container *ngIf="quiz">
+  <h2>{{quiz.quizTitle}}</h2>
+  <app-quiz-form
+    *ngFor="let quizForm of quiz.quiz"
+    [quizForm]="quizForm"
+  ></app-quiz-form>
+</ng-container>
