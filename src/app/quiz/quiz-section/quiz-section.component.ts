@@ -1,19 +1,20 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnDestroy, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from "@angular/router";
 import { QuizService } from "../../quiz.service";
 import { IQuiz, IQuizForm } from "../../models/quiz";
-import { Observable } from "rxjs";
+import { Subscription } from "rxjs";
 
 @Component({
   selector: 'app-quiz-section',
   templateUrl: './quiz-section.component.html',
   styleUrls: ['./quiz-section.component.scss']
 })
-export class QuizSectionComponent implements OnInit {
+export class QuizSectionComponent implements OnInit, OnDestroy {
 
   quiz: IQuizForm[] = []
   counter: number = 1
   formNumber: number = 0
+  private subscription: Subscription
   constructor(private quizService: QuizService,
               private route: ActivatedRoute,
               private router: Router) { }
@@ -28,7 +29,7 @@ export class QuizSectionComponent implements OnInit {
   }
 
   public getAll(): void {
-    this.quizService.getAll().subscribe(
+    this.subscription = this.quizService.getAll().subscribe(
       (resp: IQuiz[]) => {
         this.quiz = resp.find((q: IQuiz) => q.code === this.route.snapshot.params.section)!.group
         this.formNumber = this.quiz.length
@@ -50,6 +51,10 @@ export class QuizSectionComponent implements OnInit {
     console.log(quiz);
     // this.quizService.saveQuiz(quiz)
     // .subscribe(resp => do something else)
+  }
+
+  public ngOnDestroy(): void {
+    this.subscription.unsubscribe()
   }
 
   private increment(): void {

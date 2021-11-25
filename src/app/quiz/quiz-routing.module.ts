@@ -16,11 +16,7 @@ const routes: Routes = [
   {
     path: 'quiz/:section',
     component: QuizSectionComponent
-  },
-  // {
-  //   path: 'quiz/:section/:id',
-  //   component: QuizSectionComponent
-  // }
+  }
 ];
 
 @NgModule({
